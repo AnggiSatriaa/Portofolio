@@ -45,7 +45,7 @@ function Intro() {
           className="w-[120px] h-[40px] border-2 border-white bg-red-800 text-[#ffff] font-semibold not-italic font-mono hover:bg-red-500 hover:text-[#f3f3f3_!important] rounded z-10"
           onClick={() => {
             router.push(
-              "https://api.whatsapp.com/send/?phone=0895600414111&text&type=phone_number&app_absent=0"
+              "https://api.whatsapp.com/send/?phone=%2B62895600414111&text&type=phone_number&app_absent=0"
             );
           }}
         >

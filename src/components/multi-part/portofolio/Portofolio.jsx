@@ -24,7 +24,7 @@ function Portofolio() {
   return (
     <div
       id="forCard"
-      className="w-full h-full flex xl:flex-wrap gap-5 justify-center items-center xl:flex-row md:flex-row flex-col md:items-start md:flex-wrap xl:justify-center "
+      className="w-full mt-36 h-full flex xl:flex-wrap gap-5 justify-center items-center xl:flex-row md:flex-row flex-col md:items-start md:flex-wrap xl:justify-center "
     >
       {portofolio.map((e) => {
         return (
