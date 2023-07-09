@@ -28,19 +28,23 @@ function Portofolio() {
     >
       {portofolio.map((e) => {
         return (
-          <div className="flex flex-col bg-[#ffff] shadow rounded-md w-[285px] xl:h-[350px] md:h-[350px] h-[500px] p-3 gap-2">
+          <div
+            key={e.name}
+            className="flex flex-col bg-[#ffff] shadow rounded-md w-[285px] xl:h-[350px] md:h-[350px] h-[500px] p-3 gap-2"
+          >
             <div
               className="flex xl:flex-col flex-row  w-full h-full  hover:bg-[#f3f3f3] cursor-pointer"
               onClick={() => {
                 router.push(e.link);
               }}
             >
-              <Image
-                className="w-full xl:h-[250px] rounded-md "
-                src={e.image}
-              />
+              <img className="w-full xl:h-[250px] rounded-md " src={e.image} />
             </div>
-            <label htmlFor="" className="w-full h-fit text-md font-semibold">
+            <label
+              htmlFor=""
+              className="w-full h-fit text-md font-semibold"
+              key={e.name}
+            >
               {e.name}
             </label>
           </div>

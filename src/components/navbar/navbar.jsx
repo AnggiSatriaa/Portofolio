@@ -55,6 +55,7 @@ function Navbar({ active, setActive, renderActive }) {
         {values.map((e) => {
           return (
             <div
+              key={e.name}
               className={`flex min-w-[100px] h-7  xl:p-1 justify-center items-center ${
                 active === e.name
                   ? "xl:border-b xl:border-white"

@@ -14,7 +14,7 @@ function About() {
   ];
 
   return (
-    <div className="w-full h-full  p-3 gap-3 flex">
+    <div className="w-full h-full p-3 gap-3 flex">
       <label
         htmlFor=""
         className="w-full h-full break-words text-white font-semibold leading-[150%]"
@@ -26,8 +26,8 @@ function About() {
         Dumbways.id, and i have some portfolio in my github and mini project in
         codesanbox.
         <br />
-        <br />I have some experience if you want to know me more let's connect
-        to my Linkedin.
+        <br />I have some experience if you want to know me more lets connect to
+        my Linkedin.
       </label>
     </div>
   );
