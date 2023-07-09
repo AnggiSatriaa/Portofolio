@@ -1,5 +1,5 @@
 import React from "react";
-import Github from "../../../assets/Github.jpg";
+import Github from "../../../assets/github.jpg";
 import Linkedin from "../../../assets/linkedin.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -28,17 +28,17 @@ function Portofolio() {
     >
       {portofolio.map((e) => {
         return (
-          <div
-            key={e.name}
-            className="flex flex-col bg-[#ffff] shadow rounded-md w-[285px] xl:h-[350px] md:h-[350px] h-[500px] p-3 gap-2"
-          >
+          <div className="flex flex-col bg-[#ffff] shadow rounded-md w-[285px] xl:h-[350px] md:h-[350px] h-[500px] p-3 gap-2">
             <div
               className="flex xl:flex-col flex-row  w-full h-full  hover:bg-[#f3f3f3] cursor-pointer"
               onClick={() => {
                 router.push(e.link);
               }}
             >
-              <img className="w-full xl:h-[250px] rounded-md " src={e.image} />
+              <Image
+                className="w-full xl:h-[250px] rounded-md "
+                src={e.image}
+              />
             </div>
             <label
               htmlFor=""

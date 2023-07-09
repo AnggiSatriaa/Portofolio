@@ -54,7 +54,7 @@ function Intro() {
       </div>
       <div className="flex   xl:w-3/12 xl:h-full ">
         <div className="flex"></div>
-        <img
+        <Image
           src={Anggi}
           className="w-fit h-full absolute top-[0px] xl:right-8 right-[-20px] opacity-40"
         />
